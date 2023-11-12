@@ -1,3 +1,4 @@
+import "./About.css"
 import { Fragment } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
@@ -21,7 +22,7 @@ export default function About() {
           <div className="card__image-container">
             <img
               className="card__image-profile"
-              src="/assets/images/panda_gafas03.jpg"
+              src="/assets/images/fotoEmpresa.png"
               alt="Profile picture"
             />
           </div>

@@ -1,0 +1,32 @@
+.card__image-profile {
+  min-width: 320px;
+  max-width: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card__name-and-image-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card__name {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.card__subtitle {
+  font-size: 1.25em;
+}
+
+.card__link a {
+  margin-left: 1em;
+}
+
+.card--profile {
+  line-height: 1.5;
+}

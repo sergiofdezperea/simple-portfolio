@@ -1,4 +1,4 @@
-/* eslint-disable no-useless-escape */
+import "./Switches.css"
 import { Fragment, useState } from "react"
 
 export default function Switches() {

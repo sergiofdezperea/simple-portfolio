@@ -1,0 +1,21 @@
+.switches {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.toggle-theme__icon {
+  margin-right: 0.5em;
+  width: 20px;
+}
+
+.toggle-theme__text {
+  margin-right: 0.8rem;
+}
