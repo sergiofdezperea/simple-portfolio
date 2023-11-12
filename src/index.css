@@ -69,8 +69,10 @@ main {
   gap: 16px 2.5em;
 }
 
-/* .card__columns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+.experience {
+  padding-bottom: 0.8em;
+}
+
+.experience li {
+  margin: 0.5em;
+}

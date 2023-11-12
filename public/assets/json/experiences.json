@@ -1,0 +1,33 @@
+{
+    "experiences": [
+      {
+        "company": "Metrohm DropSens",
+        "jobTitle": "Desarrollador Java",
+        "companyDescription":
+          "Fabricación de electrodomésticos, equipamiento eléctrico y electrónica",
+        "startDate": "jul.2023",
+        "endDate": "Actualidad",
+        "accomplishmentList": ["Aplicaciones de escritorio multihilo con tratamiento en tiempo real sobre graficas.",
+         "Mejoras en el frontend, realizando la aplicación adaptable a diferentes tamaño de pantalla.",
+        "Documentación propia enseñar al equipo funcionalidades de librerías, sobre metodologías o de funcionalidades implementadas.",
+        "Tecnologías: Java, Swing, JavaFX, SVN, Git."
+        ]
+      },
+      {
+        "company": "Capgemini",
+        "jobTitle": "Consultor técnico en proyecto para Orange ",
+        "companyDescription": "Servicios de TI y consultoría de TI",
+        "startDate": "dic.2016",
+        "endDate": "jun.2023",
+        "accomplishmentList": 
+        ["Creación de aplicación interna para agilizar la resolución  de incidencias y hacer transparente la lógica de negocio, con transacciones a bbdd.", 
+        "Creación de graficas en Grafana con InfluxDB, para la consulta del cliente del estado de los diferentes servicios.",
+        "Optimización sobre query que podía tardar más 1 minuto llegando a dar timeout en el servicio a menos de 3 segundos.",
+        "Migraciones de servicios con subidas de dependencias tecnológicas en sistemas Red Hat.",
+        "Guardias proporcionando soluciones rápidas en horario nocturno.",
+        "Gestión de incidencias, vía mail, teléfono y herramienta ticketing.",
+        "Tecnologías: Shellscript, Java, Spring, PL-SQL, SQL-Oracle, MySQL, InfluxDB, PHP, Javascript, ASP.NET."
+      ]
+      }
+    ]
+}
