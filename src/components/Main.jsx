@@ -8,24 +8,13 @@ export default function Main() {
       <About />
       <Experiences />
       <Skills
-        titleSkills="Skills"
+        titleSkills="Habilidades"
         arraySkills={[
-          "Java",
-          "JavaScript",
-          "Cosas muy muy Bonitas",
-          "4",
-          "blibliblibli",
-        ]}
-      />
-
-      <Skills
-        titleSkills="SoftSkills"
-        arraySkills={[
-          "Java",
-          "JavaScript",
-          "Cosas muy muy Bonitas",
-          "4",
-          "blibliblibli",
+          "Trabajo en equipo",
+          "Código legible ",
+          "Documentación clara",
+          "Proactivo ",
+          "Adaptación ante imprevistos",
         ]}
       />
     </main>
