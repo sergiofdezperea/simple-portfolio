@@ -65,8 +65,8 @@ main {
 }
 
 @media (max-width: 425px) {
-  .card {
-    max-width: 75vw;
+  body {
+    font-size: 16px;
   }
 }
 
