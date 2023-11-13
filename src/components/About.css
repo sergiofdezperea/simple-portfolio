@@ -5,6 +5,14 @@
   overflow: hidden;
 }
 
+/* Reduce image size on mobile */
+@media (max-width: 425px) {
+  .card__image-profile {
+    min-width: 160px;
+    max-width: 160px;
+  }
+}
+
 .card__name-and-image-container {
   display: flex;
   gap: 16px;
