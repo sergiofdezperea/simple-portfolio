@@ -1,17 +1,22 @@
 import { useState, useEffect } from "react"
 import formatToList from "./formatToList"
-// This component will return a block of html with the sctructure of a json
-const experiencesJson = await fetch("/assets/json/experiences.json")
-const data = await experiencesJson.json()
+
 function Experiences() {
   const [experiences, setExperiences] = useState([])
   const experienceTitle = "Responsabilidades"
 
+  // Load data from json file
   useEffect(() => {
-    setExperiences(data.experiences)
+    const getData = async () => {
+      fetch("/assets/json/experiences.json")
+        .then((response) => response.json())
+        .then((response) => {
+          setExperiences(response.experiences)
+        })
+        .catch((err) => console.error(err))
+    }
+    getData()
   }, [])
-
-  console.log("Experiences.jsx: experiences: ", experiences)
 
   return (
     <section className="card section section--experiences">
