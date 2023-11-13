@@ -7,6 +7,10 @@
   --transition: color 0.1s, background-color 0.2s ease-in-out;
 }
 
+a {
+  color: hsl(214, 84%, 56%);
+}
+
 body {
   margin: 0;
   background-color: var(--bg-color);
