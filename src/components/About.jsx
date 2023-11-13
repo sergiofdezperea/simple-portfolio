@@ -29,11 +29,14 @@ export default function About() {
         </div>
         <div className="card__body">
           <p>
-            {yearsInSector} años de experiencia en el sector. Desde pequeño me
-            ha gustado la informática y siempre he estado interesado en aprender
-            sobre diferentes tecnologías. Me apasiona el código legible y que
-            sea sencillo de modificar, ya que creo que es fundamental para el
-            desarrollo de software de calidad.
+            {yearsInSector} años de experiencia en el sector.
+            <br />
+            Desde pequeño me ha gustado la informática y siempre he estado
+            interesado en aprender sobre diferentes tecnologías.
+            <br />
+            Me apasiona el código legible y que sea sencillo de modificar, ya
+            que creo que es fundamental para el desarrollo de software de
+            calidad.
           </p>
           <div className="card__link">
             {envelovepIcon}
