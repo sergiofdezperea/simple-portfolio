@@ -64,6 +64,12 @@ main {
   margin: 0 2em;
 }
 
+@media (max-width: 425px) {
+  .card {
+    max-width: 75vw;
+  }
+}
+
 .card__skills {
   display: flex;
   flex-direction: column;
