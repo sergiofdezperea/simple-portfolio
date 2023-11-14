@@ -3,7 +3,7 @@ import formatToList from "./formatToList"
 
 function Experiences() {
   const [experiences, setExperiences] = useState([])
-  const experienceTitle = "Responsabilidades"
+  const experienceTitle = "Principales logros"
 
   // Load data from json file
   useEffect(() => {
