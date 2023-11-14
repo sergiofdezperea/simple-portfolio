@@ -21,8 +21,8 @@
         "endDate": "jun.2023",
         "accomplishmentList": 
         ["Creación de aplicación interna para agilizar la resolución  de incidencias y hacer transparente la lógica de negocio, con transacciones a bbdd.", 
-        "Creación de graficas en Grafana con InfluxDB, para la consulta del cliente del estado de los diferentes servicios.",
-        "Optimización sobre query que podía tardar más 1 minuto llegando a dar timeout en el servicio a menos de 3 segundos.",
+        "Creación de gráficas en Grafana con InfluxDB, para la consulta del cliente del estado de los diferentes servicios.",
+        "Optimización sobre query que podía tardar más de 1 minuto llegando a dar timeout en el servicio a menos de 3 segundos.",
         "Migraciones de servicios con subidas de dependencias tecnológicas en sistemas Red Hat.",
         "Guardias proporcionando soluciones rápidas en horario nocturno.",
         "Gestión de incidencias, vía mail, teléfono y herramienta ticketing.",
