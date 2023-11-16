@@ -1,0 +1,11 @@
+{
+    "es":{
+        "profesion" : "Desarrolador de software",
+        "aboutme" : " años de experiencia en el sector.\n\nDesde pequeño me ha gustado la informática y siempre he estado interesado en aprender sobre diferentes tecnologías.\n\nMe apasiona el código legible y que sea sencillo de modificar, ya que creo que es fundamental para el desarrollo de software de calidad."        
+    },
+    "en":{
+        "profesion" : "Software developer",
+        "aboutme" : " years of experience in the sector.\n\nSince I was a child, I have liked computing and I have always been interested in learning about different technologies.\n\nI am passionate about readable code that is easy to modify, as I believe it is fundamental for the development of quality software."
+
+    }
+}

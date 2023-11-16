@@ -38,3 +38,8 @@
 .card--profile {
   line-height: 1.5;
 }
+
+.use-break-lines {
+  white-space: pre-line;
+  vertical-align: bottom;
+}

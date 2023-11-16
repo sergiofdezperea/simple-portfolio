@@ -1,9 +1,12 @@
 import "./About.css"
 import { Fragment } from "react"
+import { useState, useEffect, useContext } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { LanguageContext } from "../App"
 
 export default function About() {
+  const { language } = useContext(LanguageContext)
   const envelovepIcon = <FontAwesomeIcon icon={faEnvelope} />
   const date = new Date()
   const yearsInSector =
@@ -11,13 +14,30 @@ export default function About() {
       ? date.getFullYear() - 2016
       : date.getFullYear() - 2017
 
+  // Read from a json where you can select the language
+  // and the text that you want to display
+  // Get languaje date when context change
+
+  const [about, setAbout] = useState()
+  useEffect(() => {
+    const getData = async () => {
+      fetch("/assets/json/about.json")
+        .then((response) => response.json())
+        .then((response) => {
+          setAbout(response[language])
+        })
+        .catch((err) => console.error(err))
+    }
+    getData()
+  }, [language])
+
   return (
     <Fragment>
       <article className="card card--profile">
         <div className="card__name-and-image-container">
           <div className="card__name-container">
             <h1 className="card__name">Sergio Fdez Perea</h1>
-            <p className="card__subtitle">Desarrolador de software</p>
+            {about && <p className="card__subtitle">{about.profesion}</p>}
           </div>
           <div className="card__image-container">
             <img
@@ -28,15 +48,8 @@ export default function About() {
           </div>
         </div>
         <div className="card__body">
-          <p>
-            {yearsInSector} años de experiencia en el sector.
-            <br />
-            Desde pequeño me ha gustado la informática y siempre he estado
-            interesado en aprender sobre diferentes tecnologías.
-            <br />
-            Me apasiona el código legible y que sea sencillo de modificar, ya
-            que creo que es fundamental para el desarrollo de software de
-            calidad.
+          <p className="use-break-lines">
+            {yearsInSector} {about && about.aboutme}
           </p>
           <div className="card__link">
             {envelovepIcon}

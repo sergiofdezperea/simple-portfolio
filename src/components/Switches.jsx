@@ -1,15 +1,17 @@
 import "./Switches.css"
-import { Fragment, useState } from "react"
+import { Fragment, useState, useContext } from "react"
+import { LanguageContext } from "../App"
 
 export default function Switches() {
   const [isDarkMode, setIsDarkMode] = useState(false)
+  const { language, setLanguage } = useContext(LanguageContext)
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode)
     document.body.classList.toggle("dark")
 
-    const toggleThemeIcon = document.getElementById("toggle-icon")
-    const toggleThemeText = document.getElementById("toggle-text")
+    const toggleThemeIcon = document.getElementById("theme-icon")
+    const toggleThemeText = document.getElementById("theme-text")
 
     if (isDarkMode) {
       toggleThemeIcon.src = "\\assets\\icons\\sun.svg"
@@ -20,18 +22,43 @@ export default function Switches() {
     }
   }
 
+  const toggleLanguaje = () => {
+    const toggleIcon = document.getElementById("languaje-icon")
+    const toggleText = document.getElementById("languaje-text")
+    if (language === "es") {
+      setLanguage("en")
+      toggleIcon.src = "\\assets\\icons\\en.png"
+      toggleText.textContent = "EN"
+    } else {
+      setLanguage("es")
+      toggleIcon.src = "\\assets\\icons\\es.png"
+      toggleText.textContent = "ES"
+    }
+  }
+
   return (
     <Fragment>
       <div className="switches">
-        <div className="toggle-theme" onClick={toggleDarkMode}>
+        <div className="toggle-theme left" onClick={toggleDarkMode}>
           <img
-            id="toggle-icon"
+            id="theme-icon"
             src="\assets\icons\sun.svg"
             alt="icon theme"
-            className="toggle-theme__icon"
+            className="toggle__icon"
           />
-          <p id="toggle-text" className="toggle-theme__text">
+          <p id="theme-text" className="toggle__text ">
             Light Mode
+          </p>
+        </div>
+        <div className="toggle-theme right" onClick={toggleLanguaje}>
+          <img
+            id="languaje-icon"
+            src="\assets\icons\es.png"
+            alt="icon languaje"
+            className="toggle__icon"
+          />
+          <p id="languaje-text" className="toggle__text ">
+            ES
           </p>
         </div>
       </div>
