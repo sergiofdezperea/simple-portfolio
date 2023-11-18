@@ -1,3 +1,4 @@
+// It's adapted an adaptever version from a Microsoft course
 /**
  * Footer component
  *
@@ -19,13 +20,6 @@ import mediumIcon from "../images/socials/medium.svg"
 import twitterIcon from "../images/socials/twitter.svg"
 import youTubeIcon from "../images/socials/youtube.svg"
 
-/**
- * 💡 Learning resources
- *
- *  HTML hyperlinks: https://www.w3schools.com/html/html_links.asp
- *  Opening links in new tabs: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
- */
-
 const Footer = (props) => {
   const {
     devDotTo,
@@ -39,17 +33,7 @@ const Footer = (props) => {
   } = props
 
   return (
-    <div
-      id="footer"
-      // style={{
-      //   display: "flex",
-      //   flexDirection: "column",
-      //   alignItems: "center",
-      //   gap: "2.5rem",
-      //   padding: "5rem 0 3rem",
-      //   width: "100vw",
-      // }}
-    >
+    <div id="footer">
       <div
         style={{
           display: "flex",

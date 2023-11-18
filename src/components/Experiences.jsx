@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import formatToList from "./formatToList"
+import { LanguageContext } from "../App"
 
 function Experiences() {
   const [experiences, setExperiences] = useState([])
-  const experienceTitle = "Principales logros"
+  const { language } = useContext(LanguageContext)
+  const experienceTitle =
+    language === "es" ? "Principales logros" : "Key accomplishments"
 
   // Load data from json file
   useEffect(() => {
@@ -11,12 +14,12 @@ function Experiences() {
       fetch("/assets/json/experiences.json")
         .then((response) => response.json())
         .then((response) => {
-          setExperiences(response.experiences)
+          setExperiences(response[language].experiences)
         })
         .catch((err) => console.error(err))
     }
     getData()
-  }, [])
+  }, [language])
 
   return (
     <section className="card section section--experiences">

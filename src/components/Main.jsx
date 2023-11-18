@@ -7,16 +7,7 @@ export default function Main() {
     <main>
       <About />
       <Experiences />
-      <Skills
-        titleSkills="Habilidades"
-        arraySkills={[
-          "Trabajo en equipo",
-          "Código legible ",
-          "Documentación clara",
-          "Proactivo ",
-          "Adaptación ante imprevistos",
-        ]}
-      />
+      <Skills />
     </main>
   )
 }

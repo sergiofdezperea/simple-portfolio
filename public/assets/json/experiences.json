@@ -1,16 +1,17 @@
 {
+  "es": {
     "experiences": [
       {
         "company": "Metrohm DropSens",
         "jobTitle": "Desarrollador Java",
-        "companyDescription":
-          "Fabricación de electrodomésticos, equipamiento eléctrico y electrónica",
+        "companyDescription": "Fabricación de electrodomésticos, equipamiento eléctrico y electrónica",
         "startDate": "jul.2023",
         "endDate": "Actualidad",
-        "accomplishmentList": ["Aplicaciones de escritorio multihilo con tratamiento en tiempo real sobre graficas.",
-         "Mejoras en el frontend, realizando la aplicación adaptable a diferentes tamaño de pantalla.",
-        "Documentación propia enseñar al equipo funcionalidades de librerías, sobre metodologías o de funcionalidades implementadas.",
-        "Tecnologías: Java, Swing, JavaFX, SVN, Git."
+        "accomplishmentList": [
+          "Aplicaciones de escritorio multihilo con tratamiento en tiempo real sobre graficas.",
+          "Mejoras en el frontend, realizando la aplicación adaptable a diferentes tamaño de pantalla.",
+          "Documentación propia enseñar al equipo funcionalidades de librerías, sobre metodologías o de funcionalidades implementadas.",
+          "Tecnologías: Java, Swing, JavaFX, SVN, Git."
         ]
       },
       {
@@ -19,15 +20,49 @@
         "companyDescription": "Servicios de TI y consultoría de TI",
         "startDate": "dic.2016",
         "endDate": "jun.2023",
-        "accomplishmentList": 
-        ["Creación de aplicación interna para agilizar la resolución  de incidencias y hacer transparente la lógica de negocio, con transacciones a bbdd.", 
-        "Creación de gráficas en Grafana con InfluxDB, para la consulta del cliente del estado de los diferentes servicios.",
-        "Optimización sobre query que podía tardar más de 1 minuto llegando a dar timeout en el servicio a menos de 3 segundos.",
-        "Migraciones de servicios con subidas de dependencias tecnológicas en sistemas Red Hat.",
-        "Guardias proporcionando soluciones rápidas en horario nocturno.",
-        "Gestión de incidencias, vía mail, teléfono y herramienta ticketing.",
-        "Tecnologías: Shellscript, Java, Spring, PL-SQL, SQL-Oracle, MySQL, InfluxDB, PHP, Javascript, ASP.NET."
-      ]
+        "accomplishmentList": [
+          "Creación de aplicación interna para agilizar la resolución  de incidencias y hacer transparente la lógica de negocio, con transacciones a bbdd.",
+          "Creación de gráficas en Grafana con InfluxDB, para la consulta del cliente del estado de los diferentes servicios.",
+          "Optimización sobre query que podía tardar más de 1 minuto llegando a dar timeout en el servicio a menos de 3 segundos.",
+          "Migraciones de servicios con subidas de dependencias tecnológicas en sistemas Red Hat.",
+          "Guardias proporcionando soluciones rápidas en horario nocturno.",
+          "Gestión de incidencias, vía mail, teléfono y herramienta ticketing.",
+          "Tecnologías: Shellscript, Java, Spring, PL-SQL, SQL-Oracle, MySQL, InfluxDB, PHP, Javascript, ASP.NET."
+        ]
       }
     ]
+  },
+  "en": {
+    "experiences": [
+      {
+        "company": "Metrohm DropSens",
+        "jobTitle": "Software developer",
+        "companyDescription": "Manufacture of appliances, electrical equipment and electronics",
+        "startDate": "Jul.2023",
+        "endDate": "Present",
+        "accomplishmentList": [
+          "Multithreaded desktop applications with real-time processing on chars.",
+          "Improvements in the frontend, making the application adaptable to different screen sizes.",
+          "Own documentation to teach the team functionalities of libraries, about methodologies or implemented functionalities.",
+          "Technologies: Java, Swing, JavaFX, SVN, Git."
+        ]
+      },
+      {
+        "company": "Capgemini",
+        "jobTitle": "Technical consultant on project for Orange",
+        "companyDescription": "IT services and IT consulting",
+        "startDate": "Dec.2016",
+        "endDate": "Jun.2023",
+        "accomplishmentList": [
+          "Creation of internal application to speed up the resolution of incidents and make business logic transparent, with database transactions.",
+          "Creation of graphs in Grafana with InfluxDB, for the client's consultation of the status of the different services.",
+          "Optimization on query that could take more than 1 minute reaching to give timeout in the service to less than 3 seconds.",
+          "Migrations of services with technological dependency upgrades in Red Hat systems.",
+          "Guards providing quick solutions at night time.",
+          "Incident management from email, phone and ticketing tool.",
+          "Technologies: Shellscript, Java, Spring, PL-SQL, SQL-Oracle, MySQL, InfluxDB, PHP, Javascript, ASP.NET."
+        ]
+      }
+    ]
+  }
 }

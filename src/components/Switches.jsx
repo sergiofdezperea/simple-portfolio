@@ -2,6 +2,7 @@ import "./Switches.css"
 import { Fragment, useState, useContext } from "react"
 import { LanguageContext } from "../App"
 
+// The Switches component will change the image and text of the switch button
 export default function Switches() {
   const [isDarkMode, setIsDarkMode] = useState(false)
   const { language, setLanguage } = useContext(LanguageContext)
@@ -22,7 +23,8 @@ export default function Switches() {
     }
   }
 
-  const toggleLanguaje = () => {
+  // Only language will be spanisg or english
+  const toggleLanguage = () => {
     const toggleIcon = document.getElementById("languaje-icon")
     const toggleText = document.getElementById("languaje-text")
     if (language === "es") {
@@ -50,7 +52,7 @@ export default function Switches() {
             Light Mode
           </p>
         </div>
-        <div className="toggle-theme right" onClick={toggleLanguaje}>
+        <div className="toggle-theme right" onClick={toggleLanguage}>
           <img
             id="languaje-icon"
             src="\assets\icons\es.png"

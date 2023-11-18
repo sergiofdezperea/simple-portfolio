@@ -1,3 +1,4 @@
+// Return a list of items from an array of items
 function formatToList(titleOfList, listItems) {
   const list = (
     <>

@@ -16,8 +16,7 @@ export default function About() {
 
   // Read from a json where you can select the language
   // and the text that you want to display
-  // Get languaje date when context change
-
+  // Get language date when context change
   const [about, setAbout] = useState()
   useEffect(() => {
     const getData = async () => {

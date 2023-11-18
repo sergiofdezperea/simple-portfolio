@@ -2,12 +2,13 @@ import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Main from "./components/Main"
 
+import PropTypes from "prop-types"
 import { Fragment, createContext, useState } from "react"
 
-// Step 1: Create a new context
+// Create a context for the language
 export const LanguageContext = createContext()
 
-// Step 2: Create a provider component
+// Create a provider component
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("es") // default language is Spanish
 
@@ -19,11 +20,16 @@ export const LanguageProvider = ({ children }) => {
   )
 }
 
+LanguageProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
 const siteProps = {
   email: "sergiofdezperea@gmail.com",
   gitHub: "sergiofdezperea",
   linkedIn: "sergio-fernandez-perea",
 }
+
 function App() {
   return (
     <LanguageProvider>

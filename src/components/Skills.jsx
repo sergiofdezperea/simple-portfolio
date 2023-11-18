@@ -1,15 +1,31 @@
 import formatToList from "./formatToList"
+import { useState, useEffect, useContext } from "react"
+import { LanguageContext } from "../App"
 
-export function Skills({ titleSkills, arraySkills }) {
-  // console.log("Skills.jsx: arraySkills: ", arraySkills)
-  const unOrderedList = arraySkills
-    ? formatToList(titleSkills, arraySkills)
-    : null
+export function Skills() {
+  const { language } = useContext(LanguageContext)
+  const [skills, setSkills] = useState()
+  useEffect(() => {
+    const getData = async () => {
+      fetch("/assets/json/skills.json")
+        .then((response) => response.json())
+        .then((response) => {
+          setSkills(response[language])
+        })
+        .catch((err) => console.error(err))
+    }
+    getData()
+  }, [language])
+
+  let unOrderedList =
+    skills && skills.arraySkills
+      ? formatToList(skills.titleSkills, skills.arraySkills)
+      : null
 
   return (
     <article className="card card__skills">
-      <h3>{titleSkills}</h3>
-      <ul className="two-columns">{unOrderedList}</ul>
+      <h3>{skills && skills.titleSkills}</h3>
+      <ul className="two-columns">{skills && unOrderedList}</ul>
     </article>
   )
 }
