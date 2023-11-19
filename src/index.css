@@ -7,6 +7,10 @@
   --transition: color 0.1s, background-color 0.2s ease-in-out;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 a {
   color: hsl(214, 84%, 56%);
 }
@@ -27,6 +31,12 @@ body.dark {
 }
 
 body.dark img.socialIcon {
+  /* filter white */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+}
+
+body.dark img.toTheTop {
   /* filter white */
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
     contrast(100%);

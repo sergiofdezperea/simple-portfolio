@@ -1,0 +1,16 @@
+.toTheTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the element at the bottom of the page */
+  right: 20px; /* Place the element 20px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  max-width: 64px;
+  max-height: 64px;
+}
+
+@media (max-width: 425px) {
+  .toTheTop {
+    max-width: 32px;
+    max-height: 32px;
+  }
+}
