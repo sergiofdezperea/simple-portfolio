@@ -2,7 +2,7 @@ import formatToList from "./formatToList"
 import { useState, useEffect, useContext } from "react"
 import { LanguageContext } from "../App"
 
-export function Skills() {
+export default function Skills() {
   const { language } = useContext(LanguageContext)
   const [skills, setSkills] = useState()
   useEffect(() => {
